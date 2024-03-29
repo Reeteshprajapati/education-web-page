@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootscrift library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background-image: url(smoke\ on\ water.jpg ); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            user-select: none;
+        }
+
+        .navbar {
+            height: 80px;
+            width: 100%;
+
+            /* background-color: gold; */
+            /* background-image: url(smoke\ on\ water.jpg ); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+
+        }
+
+        h3 {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 55px;
+            color: black;
+            margin-left: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 10px;
+            font-weight: 800;
+
+        }
+
+        h3 span {
+            color: rgb(255, 70, 141);
+            font-size: 45px;
+        }
+
+        .navbar li {
+
+            display: inline;
+            margin-top: 5px;
+            margin-left: 100px;
+            text-transform: uppercase;
+            position: relative;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 900;
+            transition: text-decoration 0.1s;
+            color: black;
+        }
+
+        .navbar li a:hover {
+            text-decoration: 2px underline rgb(255, 70, 141);
+
+        }
+
+        .as {
+            margin-left: 260px;
+            font-size: 18px;
+            border-radius: 5px;
+            /* border: none; */
+            outline: none;
+
+        }
+
+        .btn1 {
+            cursor: pointer;
+            font-size: 14px;
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-left: 5px;
+            transition: transform 0.5s;
+        }
+
+        .btn1:hover {
+
+            transform: scale(1.1);
+        }
+
+        .btn2 {
+            cursor: pointer;
+            font-size: 14px;
+            background-color: rgba(25, 185, 25, 0.952);
+            color: aliceblue;
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            /* margin-left: 5px; */
+            transition: transform 0.5s;
+            position: absolute;
+            right: 60px;
+            margin-top: 10px;
+        }
+
+        .btn2:hover {
+
+            transform: scale(1.1);
+        }
+
+        .btn3 {
+            cursor: pointer;
+            font-size: 14px;
+            background-color: rgba(25, 185, 25, 0.952);
+            color: aliceblue;
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            /* margin-left: 5px; */
+            transition: transform 0.5s;
+            position: absolute;
+            right: 140px;
+            margin-top: 10px;
+        }
+
+        .btn3:hover {
+
+            transform: scale(1.1);
+        }
+
+        .p1 {
+            text-transform: capitalize;
+            font-size: 45px;
+            margin-top: 100px;
+            position: absolute;
+            right: 230px;
+            top: 190px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .p2 {
+            position: absolute;
+            right: 250px;
+            top: 245px;
+            margin-top: 100px;
+            font-size: 25px;
+            font-weight: 450;
+            text-transform: capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .p3 {
+            position: absolute;
+            right: 380px;
+            top: 280px;
+            margin-top: 100px;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .image1 .img1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 4px black;
+            position: absolute;
+            top: 170px;
+            left: 305px;
+            transition: transform 0.5s;
+            cursor: pointer;
+
+        }
+
+        .image1 .img1:hover {
+            transform: scale(1.1);
+        }
+
+        .image1 .img2 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 4px black;
+            position: absolute;
+            top: 355px;
+            left: 180px;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .image1 .img2:hover {
+            transform: scale(1.1);
+        }
+
+        .image1 .img3 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 4px black;
+            position: absolute;
+            top: 355px;
+            left: 420px;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .image1 .img3:hover {
+            transform: scale(1.1);
+        }
+
+        .btn4 {
+            position: absolute;
+            right: 380px;
+            top: 415px;
+            text-transform: uppercase;
+            padding: 10px 45px;
+            font-weight: 700;
+            background-color: rgba(25, 185, 25, 0.952);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform .5s
+        }
+
+        .btn4:hover {
+            transform: scale(1.1);
+        }
+
+        .modal-title {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .modal-body form input {
+            margin-left: 50px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 5px 50px;
+            border-radius: 10px;
+            border: none;
+            text-transform: uppercase;
+            box-shadow: 0 0 2px 2px black;
+
+        }
+
+        .modal-body form p a {
+            margin-left: 50px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        .btn2-1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 35px;
+            font-weight: 700;
+            background-color: rgba(25, 185, 25, 0.952);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .btn3-1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 35px;
+            font-weight: 700;
+            background-color: rgba(25, 185, 25, 0.952);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+
+        .btn6 {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 35px;
+            font-weight: 700;
+            background-color: rgba(25, 185, 25, 0.952);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul>
+            <h3><span>e</span>d</h3>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">login</a></li>
+
+            <input class="as" type="search" placeholder="search here...">
+            <button class="btn1 ">SEARCH</button>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="box">
+            <div class="box1">
+                <div class="image1">
+                    <img class="img1" src="ed3-unsplash (5).jpg" alt="image">
+                    <img class="img2" src="ed2-unsplash (4).jpg" alt="image">
+                    <img class="img3" src="ed1-unsplash (3).jpg" alt="image">
+                </div>
+                <p class="p1">free learning plateform.</p>
+                <p class="p2">this is fully free platform for student. </p>
+                <p class="p3">zero to advance. </p>
+
+            </div>
+
+
+        </div>
+
+        <!-- signin model -->
+
+        <!-- <button class="btn2 ">SIGN IN</button> -->
+        <button class="btn2 btn-success btn-lg" data-toggle="modal" data-target="#signin">SIGN IN</button>
+        <div id="signin" class="modal" role="dialog">
+            <div class="modal-dialog">
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="btn5" class="close" data-dismiss="modal">&times</button>
+                        <h4 class="modal-title">FREE PLATEFORM </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text / email" placeholder="name / email " required>
+                            <input type="password" placeholder="password" required>
+                            <p><a href="#">FORGET PASSWORD ?</a></p>
+                        </form>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn6 btn-success" data-dismiss="modal">close</button> -->
+                            <button type="button" class="btn2-1 btn-success" data-dismiss="modal">login</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- signup model -->
+
+        <!-- <button class="btn3 ">SIGN UP</button> -->
+        <button class="btn3 btn-success btn-lg" data-toggle="modal" data-target="#signup">SIGN UP</button>
+        <div id="signup" class="modal" role="dialog">
+            <div class="modal-dialog">
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="btn5" class="close" data-dismiss="modal">&times</button>
+                        <h4 class="modal-title">FREE PLATEFORM </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" placeholder="full name " required>
+                            <input type="email" placeholder="email" required>
+                            <input type="number" placeholder="phone number" min="1" max="10" required>
+                            <input type="number" placeholder="age" min="15" max="30" required>
+                            <input type="text" placeholder="place" required>
+                        </form>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn6 btn-success" data-dismiss="modal">close</button> -->
+                            <button type="button" class="btn3-1 btn-success" data-dismiss="modal">CONFIRM</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- enroll model -->
+
+        <!-- <button id="btn4 ">enroll now</button> -->
+        <button class="btn4 btn-success btn-lg" data-toggle="modal" data-target="#ab">enroll now</button>
+        <!-- modal -->
+        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ab">sign in</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ab">open modal</button> -->
+        <!-- modal -->
+        <div id="ab" class="modal" role="dialog">
+            <div class="modal-dialog">
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="btn5" class="close" data-dismiss="modal">&times</button>
+                        <h4 class="modal-title">FREE PLATEFORM </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" placeholder="full name " required>
+                            <input type="email" placeholder="email" required>
+                            <input type="number" placeholder="age" min="15" max="30" required>
+                            <input type="number" placeholder="phone number" min="1" max="10" required>
+                            <input type="text" placeholder="place" required>
+                        </form>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn6 btn-success" data-dismiss="modal">close</button> -->
+                            <button type="button" class="btn6 btn-success" data-dismiss="modal">SUBMIT</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
